@@ -17,7 +17,7 @@ class Complex
 	end
 	def / (complejo)
 
-		Complex.new((complejo.Re * @Re + complejo.Im * @Im) / (@Im** + @Re**) , (complejo.Im * @Re + complejo.Re * @Im) / (@Im** + @Re**))
+		Complex.new((complejo.Re * @Re + complejo.Im * @Im) / (@Im**2 + @Re**2) , (complejo.Im * @Re + complejo.Re * @Im) / (@Im**2 + @Re**2))
 	end
 	def *(num)
 
